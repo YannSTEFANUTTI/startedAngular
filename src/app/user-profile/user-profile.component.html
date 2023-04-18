@@ -1,0 +1,9 @@
+<div>
+  <img [src]="user.photo" [alt]="user.name" />
+  <p>Nom : {{ user.name }}</p>
+  <p>Prénom : {{ user.firstName }}</p>
+  <p [hidden]="!displayAge" class="age">Age : {{ user.age }}</p>
+  <p>{{ user.quote }}</p>
+  <input type="text" [(ngModel)]="user.quote" >
+</div>
+<button (click)="kickAge()">Kick age !</button>
