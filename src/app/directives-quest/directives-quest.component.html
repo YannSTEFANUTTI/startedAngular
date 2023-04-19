@@ -1,0 +1,10 @@
+<div>
+  <h1>{{ title }}</h1>
+  <button
+    (click)="switchEdit()"
+    [ngStyle]="{ backgroundColor: isAdmin ? 'red' : 'transparent' }"
+  >
+    View
+  </button>
+  <button (click)="switchEdit()" *ngIf="isAdmin" class="edit">Edit</button>
+</div>

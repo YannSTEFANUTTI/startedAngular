@@ -1,4 +1,3 @@
-import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 
 interface User {
@@ -26,9 +25,6 @@ export class UserProfileComponent {
     photo: 'https://randomuser.me/api/portraits/lego/2.jpg'
   };
   displayAge: boolean = true;
-  name: string = "Bob";
-
-  imageSrc: string = "https://via.placeholder.com/350x150";
 
   kickAge(): void {
     this.displayAge = !this.displayAge
