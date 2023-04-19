@@ -8,6 +8,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { DirectivesQuestComponent } from './directives-quest/directives-quest.component';
 import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { FormTemplatesDrivenComponent } from './form-templates-driven/form-templates-driven.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     UserProfileComponent,
     DirectivesQuestComponent,
     MenuComponent,
-    SignUpComponent
+    SignUpComponent,
+    FormTemplatesDrivenComponent
   ],
   imports: [
     BrowserModule,
