@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { BlockComponent } from './block/block.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { DirectivesQuestComponent } from './directives-quest/directives-quest.component';
+import { MenuComponent } from './menu/menu.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlockComponent,
     UserProfileComponent,
-    DirectivesQuestComponent
+    DirectivesQuestComponent,
+    MenuComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
