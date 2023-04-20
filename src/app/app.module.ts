@@ -9,6 +9,11 @@ import { DirectivesQuestComponent } from './directives-quest/directives-quest.co
 import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { FormTemplatesDrivenComponent } from './form-templates-driven/form-templates-driven.component';
+import { KitchenComponent } from './kitchen/kitchen.component';
+import { MagicOvenComponent } from './magic-oven/magic-oven.component';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './skill/skill.component';
+import { ComposantsComponent } from './composants/composants.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { FormTemplatesDrivenComponent } from './form-templates-driven/form-templ
     DirectivesQuestComponent,
     MenuComponent,
     SignUpComponent,
-    FormTemplatesDrivenComponent
+    FormTemplatesDrivenComponent,
+    KitchenComponent,
+    MagicOvenComponent,
+    DeveloperComponent,
+    SkillComponent,
+    ComposantsComponent,
   ],
   imports: [
     BrowserModule,
