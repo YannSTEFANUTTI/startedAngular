@@ -10,9 +10,7 @@ export class CreateOnomatopiaComponent {
   @Output() sendOnomatopiaToParent: EventEmitter<string> = new EventEmitter();
 
   createOnomatopia(): void {
-    if (this.newOnomatopia) {
-      this.sendOnomatopiaToParent.emit(this.newOnomatopia);
-      this.newOnomatopia = '';
-    }
+    this.sendOnomatopiaToParent.emit(this.newOnomatopia);
+    this.newOnomatopia = '';
   }
 }
