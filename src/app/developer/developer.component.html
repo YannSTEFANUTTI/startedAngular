@@ -3,12 +3,6 @@
 <p>Gender : {{ model.gender }}</p>
 <p>Bio : {{ model.bio }}</p>
 
-<!-- <div *ngFor="let skill of model.skills">
-  <h4>{{ skill.name }}</h4>
-  <img [src]="skill.logo" alt="{{ skill.name }} logo" />
-  <a [href]="skill.site">https://angular.io/</a>
-</div> -->
-
 <app-skill *ngFor="let skill of model.skills"
   [name]="skill.name"
   [logo]="skill.logo"

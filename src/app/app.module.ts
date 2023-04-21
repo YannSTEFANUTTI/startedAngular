@@ -14,6 +14,9 @@ import { MagicOvenComponent } from './magic-oven/magic-oven.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
 import { ComposantsComponent } from './composants/composants.component';
+import { DirectivesCoursComponent } from './directives-cours/directives-cours.component';
+import { OnomatopiasComponent } from './onomatopias/onomatopias.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { ComposantsComponent } from './composants/composants.component';
     DeveloperComponent,
     SkillComponent,
     ComposantsComponent,
+    DirectivesCoursComponent,
+    OnomatopiasComponent,
+    CreateOnomatopiaComponent,
   ],
   imports: [
     BrowserModule,

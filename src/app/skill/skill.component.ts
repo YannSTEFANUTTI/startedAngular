@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SkillComponent {
   @Input()
-  name: string = "";
+  name!: string;
   @Input()
   logo: string = "";
   @Input()
