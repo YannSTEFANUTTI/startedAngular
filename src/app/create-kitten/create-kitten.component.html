@@ -1,18 +1,14 @@
+<h2>Chien trouvé</h2>
 
-<form #kittenForm="ngForm" (ngSubmit)="onSubmit()">
-  <div>
-    Form submitted ? {{ kittenForm.submitted }} Form valid ?
-    {{ kittenForm.valid }} Form invalid ? {{ kittenForm.invalid }}
-  </div>
-
+<form #kittenForm="ngForm" (ngSubmit)="kittenForm.valid && createKitten()">
   <fieldset>
-    <label for="name-kitten">Nom du truc</label>
+    <label for="name-kitten">Nom du iench </label>
     <input
       type="text"
       name="name-kitten"
       id="name-kitten"
       #name="ngModel"
-      [(ngModel)]="kitten.name"
+      [(ngModel)]="newKitten.name"
       required
     />
     <div *ngIf="kittenForm.submitted && name.errors">
@@ -20,13 +16,13 @@
     </div>
   </fieldset>
   <fieldset>
-    <label for="race-kitten">Race du truc</label>
+    <label for="race-kitten">Race du iench </label>
     <input
       type="text"
       name="race-kitten"
       id="race-kitten"
       #race="ngModel"
-      [(ngModel)]="kitten.race"
+      [(ngModel)]="newKitten.race"
       required
     />
     <div *ngIf="kittenForm.submitted && race.errors">
@@ -34,13 +30,13 @@
     </div>
   </fieldset>
   <fieldset>
-    <label for="birth-kitten">Naissance</label>
+    <label for="birth-kitten">Naissance </label>
     <input
       type="date"
       name="birth-kitten"
       id="birth-kitten"
       #birth="ngModel"
-      [(ngModel)]="kitten.birth"
+      [(ngModel)]="newKitten.birth"
       required
     />
     <div *ngIf="kittenForm.submitted && birth.errors">
@@ -48,18 +44,19 @@
     </div>
   </fieldset>
   <fieldset>
-    <label for="picture-kitten">Photo</label>
+    <label for="picture-kitten">Photo </label>
     <input
       type="text"
       name="picture-kitten"
       id="picture-kitten"
       #picture="ngModel"
-      [(ngModel)]="kitten.picture"
+      [(ngModel)]="newKitten.picture"
       required
     />
   </fieldset>
   <div *ngIf="kittenForm.submitted && picture.errors">
     <span *ngIf="picture.errors?.['required']">la tof !</span>
   </div>
+  <div *ngIf="kittenForm.valid">Le formulaire est valide !</div>
   <button type="submit">Balance ton iench</button>
 </form>

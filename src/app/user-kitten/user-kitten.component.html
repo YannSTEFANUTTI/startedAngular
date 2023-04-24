@@ -1,1 +1,6 @@
-<p>user-kitten works!</p>
+<h2>Restaurant</h2>
+<app-kitten-card
+  *ngFor="let kitten of userKittenList"
+  [kittenToCard]="kitten"
+  [showButton]="false"
+></app-kitten-card>

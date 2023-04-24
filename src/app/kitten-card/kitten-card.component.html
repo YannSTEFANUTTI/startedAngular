@@ -1,0 +1,6 @@
+<div>
+<h2>{{ kittenToCard.name }}</h2>
+<img [src]="kittenToCard.picture" alt="{{ kittenToCard.name }}" />
+<p>{{ kittenToCard.race }}</p>
+<p>{{ kittenToCard.birth | date:"d MMMM y" }}</p>
+<button *ngIf="showButton" (click)="chooseKitten(kittenToCard.name)">Ajouter à l'abattoir</button></div>

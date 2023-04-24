@@ -1,4 +1,4 @@
-<h2>{{ name }}</h2>
-<img [src]="{{picture}}" alt="{{ name }}" />
-<p>{{ race }}</p>
-<p>{{ birth }}</p>
+
+<h2>Réserve de chiens</h2>
+
+<app-kitten-card (choosenKitten)="chooseKitten($event)" *ngFor="let kitten of kittenList" [kittenToCard]="kitten"></app-kitten-card>

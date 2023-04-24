@@ -21,6 +21,9 @@ import { KittenListComponent } from './kitten-list/kitten-list.component';
 import { CreateKittenComponent } from './create-kitten/create-kitten.component';
 import { UserKittenComponent } from './user-kitten/user-kitten.component';
 import { KittenRacineComponent } from './kitten-racine/kitten-racine.component';
+import { ArticleListComponent } from './article-list/article-list.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { KittenCardComponent } from './kitten-card/kitten-card.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { KittenRacineComponent } from './kitten-racine/kitten-racine.component';
     CreateKittenComponent,
     UserKittenComponent,
     KittenRacineComponent,
+    ArticleListComponent,
+    ArticleDetailComponent,
+    KittenCardComponent,
   ],
   imports: [
     BrowserModule,

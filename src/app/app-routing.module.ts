@@ -9,6 +9,9 @@ import { ComposantsComponent } from './composants/composants.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { DirectivesCoursComponent } from './directives-cours/directives-cours.component';
 import { OnomatopiasComponent } from './onomatopias/onomatopias.component';
+import { ArticleListComponent } from './article-list/article-list.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { KittenRacineComponent } from './kitten-racine/kitten-racine.component';
 
 const routes: Routes = [
   { path: "user", component: UserProfileComponent },
@@ -20,6 +23,10 @@ const routes: Routes = [
   { path: "input-cours", component: KitchenComponent },
   { path: "developer", component: DeveloperComponent },
   { path: "onomatopias", component: OnomatopiasComponent },
+  { path: "kittens", component: KittenRacineComponent },
+  { path: "article-list", component: ArticleListComponent },
+  { path: "article/:id", component: ArticleDetailComponent },
+
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Kitten } from '../models/kitten.model';
 
 @Component({
   selector: 'app-kitten-list',
@@ -6,8 +7,15 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./kitten-list.component.css']
 })
 export class KittenListComponent {
-  @Input() name!: string;
-  @Input() race!: string;
-  @Input() date!: Date;
-  @Input() picture!: string;
+  @Input() kittenList!: Kitten[]
+
+  @Output() choosenKitten: EventEmitter<string>= new EventEmitter<string>();
+
+  chooseKitten(kittenName: string): void {
+
+    this.choosenKitten.emit(kittenName);
+
+
+  }
+
 }
