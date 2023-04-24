@@ -1,0 +1,65 @@
+
+<form #kittenForm="ngForm" (ngSubmit)="onSubmit()">
+  <div>
+    Form submitted ? {{ kittenForm.submitted }} Form valid ?
+    {{ kittenForm.valid }} Form invalid ? {{ kittenForm.invalid }}
+  </div>
+
+  <fieldset>
+    <label for="name-kitten">Nom du truc</label>
+    <input
+      type="text"
+      name="name-kitten"
+      id="name-kitten"
+      #name="ngModel"
+      [(ngModel)]="kitten.name"
+      required
+    />
+    <div *ngIf="kittenForm.submitted && name.errors">
+      <span *ngIf="name.errors?.['required']">Le nom est requis</span>
+    </div>
+  </fieldset>
+  <fieldset>
+    <label for="race-kitten">Race du truc</label>
+    <input
+      type="text"
+      name="race-kitten"
+      id="race-kitten"
+      #race="ngModel"
+      [(ngModel)]="kitten.race"
+      required
+    />
+    <div *ngIf="kittenForm.submitted && race.errors">
+      <span *ngIf="race.errors?.['required']">Ta race !</span>
+    </div>
+  </fieldset>
+  <fieldset>
+    <label for="birth-kitten">Naissance</label>
+    <input
+      type="date"
+      name="birth-kitten"
+      id="birth-kitten"
+      #birth="ngModel"
+      [(ngModel)]="kitten.birth"
+      required
+    />
+    <div *ngIf="kittenForm.submitted && birth.errors">
+      <span *ngIf="birth.errors?.['required']">L'anniv !</span>
+    </div>
+  </fieldset>
+  <fieldset>
+    <label for="picture-kitten">Photo</label>
+    <input
+      type="text"
+      name="picture-kitten"
+      id="picture-kitten"
+      #picture="ngModel"
+      [(ngModel)]="kitten.picture"
+      required
+    />
+  </fieldset>
+  <div *ngIf="kittenForm.submitted && picture.errors">
+    <span *ngIf="picture.errors?.['required']">la tof !</span>
+  </div>
+  <button type="submit">Balance ton iench</button>
+</form>

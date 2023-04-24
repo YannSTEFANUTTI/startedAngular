@@ -17,6 +17,10 @@ import { ComposantsComponent } from './composants/composants.component';
 import { DirectivesCoursComponent } from './directives-cours/directives-cours.component';
 import { OnomatopiasComponent } from './onomatopias/onomatopias.component';
 import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
+import { KittenListComponent } from './kitten-list/kitten-list.component';
+import { CreateKittenComponent } from './create-kitten/create-kitten.component';
+import { UserKittenComponent } from './user-kitten/user-kitten.component';
+import { KittenRacineComponent } from './kitten-racine/kitten-racine.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,10 @@ import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia
     DirectivesCoursComponent,
     OnomatopiasComponent,
     CreateOnomatopiaComponent,
+    KittenListComponent,
+    CreateKittenComponent,
+    UserKittenComponent,
+    KittenRacineComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<app-user-kitten></app-user-kitten>
+<app-create-kitten></app-create-kitten>
+<app-kitten-list
+  *ngFor="let kitten of kittenList"
+  [name]="kittenList.name"
+  [race]="kittenList.race"
+  [birth]="kittenList.birth"
+  [picture]="kittenList.picture"
+></app-kitten-list>
