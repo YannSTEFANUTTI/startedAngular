@@ -12,6 +12,7 @@ import { OnomatopiasComponent } from './onomatopias/onomatopias.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { KittenRacineComponent } from './kitten-racine/kitten-racine.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 const routes: Routes = [
   { path: "user", component: UserProfileComponent },
@@ -26,6 +27,8 @@ const routes: Routes = [
   { path: "kittens", component: KittenRacineComponent },
   { path: "article-list", component: ArticleListComponent },
   { path: "article/:id", component: ArticleDetailComponent },
+  { path: "cocktail", component: CocktailListComponent },
+
 
 ];
 
