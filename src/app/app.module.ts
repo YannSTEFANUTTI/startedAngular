@@ -25,6 +25,8 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { KittenCardComponent } from './kitten-card/kitten-card.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { CocktailList02Component } from './cocktail-list02/cocktail-list02.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -51,11 +53,13 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
     ArticleDetailComponent,
     KittenCardComponent,
     CocktailListComponent,
+    CocktailList02Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

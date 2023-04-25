@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Cosmopolitan",
+        "price": 10,
+        "picture": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/80258_origin-scaled-320x410.jpg"
+    },
+    {
+        "name": "Marguarita",
+        "price": 13,
+        "picture": "https://www.oceanspray.fr/-/media/OS/US/DotCom/recipes/France/Cocktails/Cosmopolitan_MobileDETAIL.ashx"
+    },
+    {
+        "name": "Mojito",
+        "price": 8,
+        "picture": "https://www.destinationcocktails.fr/wp-content/uploads/2019/11/cocktail-mojito-2.jpg"
+    }
+]
