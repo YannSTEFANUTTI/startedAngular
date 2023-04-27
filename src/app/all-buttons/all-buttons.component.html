@@ -1,0 +1,9 @@
+<app-button
+  *ngFor="let button of buttonList"
+  [button]="button"
+  (buttonSent)="onReceiveID($event)"
+  [checkButtonsStates]="checkButtonsStates"
+></app-button>
+
+<p>Le boutton {{ numberOfButton }} a été cliqué</p>
+<h2 *ngIf="allButtonsClicked">Tout les bouttons ont été clickés</h2>

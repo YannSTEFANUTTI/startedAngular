@@ -27,6 +27,9 @@ import { KittenCardComponent } from './kitten-card/kitten-card.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailList02Component } from './cocktail-list02/cocktail-list02.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ButtonComponent } from './button/button.component';
+import { AllButtonsComponent } from './all-buttons/all-buttons.component';
+import { ButtonRacineComponent } from './button-racine/button-racine.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,9 @@ import { HttpClientModule } from '@angular/common/http';
     KittenCardComponent,
     CocktailListComponent,
     CocktailList02Component,
+    ButtonComponent,
+    AllButtonsComponent,
+    ButtonRacineComponent,
   ],
   imports: [
     BrowserModule,
