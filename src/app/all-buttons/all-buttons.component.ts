@@ -18,7 +18,6 @@ export class AllButtonsComponent {
   numberOfButton!: number;
 
   onReceiveID(id: number): void {
-    console.log(this.buttonList);
 
     this.numberOfButton = id
   }

@@ -17,7 +17,6 @@ checkButtonsStates():void {
   }
   
   ngOnInit(){
-    console.table(this.buttonList);
     setInterval(() => {
       this.checkButtonsStates();
     }, 1000);

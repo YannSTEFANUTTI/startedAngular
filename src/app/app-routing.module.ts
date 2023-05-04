@@ -15,6 +15,7 @@ import { KittenRacineComponent } from './kitten-racine/kitten-racine.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailList02Component } from './cocktail-list02/cocktail-list02.component';
 import { ButtonRacineComponent } from './button-racine/button-racine.component';
+import { TimerComponent } from './timer/timer.component';
 
 const routes: Routes = [
   { path: "user", component: UserProfileComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: "article/:id", component: ArticleDetailComponent },
   { path: "cocktail", component: CocktailListComponent },
   { path: "cocktail-two", component: CocktailList02Component },
-  { path: "button", component: ButtonRacineComponent }
+  { path: "button", component: ButtonRacineComponent },
+  { path: "timer", component: TimerComponent },
 
 
 ];

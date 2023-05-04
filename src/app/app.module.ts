@@ -26,10 +26,13 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 import { KittenCardComponent } from './kitten-card/kitten-card.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailList02Component } from './cocktail-list02/cocktail-list02.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ButtonComponent } from './button/button.component';
 import { AllButtonsComponent } from './all-buttons/all-buttons.component';
 import { ButtonRacineComponent } from './button-racine/button-racine.component';
+import { TimingInterceptor } from './core/time.interceptor';
+import { DataService } from './shared/dataservice.service';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -60,14 +63,22 @@ import { ButtonRacineComponent } from './button-racine/button-racine.component';
     ButtonComponent,
     AllButtonsComponent,
     ButtonRacineComponent,
+    TimerComponent,
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DataService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TimingInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
