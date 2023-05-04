@@ -16,6 +16,7 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailList02Component } from './cocktail-list02/cocktail-list02.component';
 import { ButtonRacineComponent } from './button-racine/button-racine.component';
 import { TimerComponent } from './timer/timer.component';
+import { TodomasterComponent } from './todomaster/todomaster.component';
 
 const routes: Routes = [
   { path: "user", component: UserProfileComponent },
@@ -34,12 +35,13 @@ const routes: Routes = [
   { path: "cocktail-two", component: CocktailList02Component },
   { path: "button", component: ButtonRacineComponent },
   { path: "timer", component: TimerComponent },
+  { path: "todo", component:  TodomasterComponent},
 
 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+exports: [RouterModule]
 })
 export class AppRoutingModule { }

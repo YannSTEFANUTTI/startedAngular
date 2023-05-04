@@ -33,6 +33,10 @@ import { ButtonRacineComponent } from './button-racine/button-racine.component';
 import { TimingInterceptor } from './core/time.interceptor';
 import { DataService } from './shared/dataservice.service';
 import { TimerComponent } from './timer/timer.component';
+import { CreateTodoComponent } from './create-todo/create-todo.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoService } from './shared/todo.service';
+import { TodomasterComponent } from './todomaster/todomaster.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +68,9 @@ import { TimerComponent } from './timer/timer.component';
     AllButtonsComponent,
     ButtonRacineComponent,
     TimerComponent,
+    CreateTodoComponent,
+    TodoListComponent,
+    TodomasterComponent,
   ],
   imports: [
   BrowserModule,
@@ -72,6 +79,7 @@ import { TimerComponent } from './timer/timer.component';
     HttpClientModule
   ],
   providers: [
+    TodoService,
     DataService,
     {
       provide: HTTP_INTERCEPTORS,
