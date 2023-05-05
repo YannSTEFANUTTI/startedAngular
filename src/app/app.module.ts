@@ -37,6 +37,7 @@ import { CreateTodoComponent } from './create-todo/create-todo.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoService } from './shared/todo.service';
 import { TodomasterComponent } from './todomaster/todomaster.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { TodomasterComponent } from './todomaster/todomaster.component';
     CreateTodoComponent,
     TodoListComponent,
     TodomasterComponent,
+    PokemonComponent,
   ],
   imports: [
   BrowserModule,

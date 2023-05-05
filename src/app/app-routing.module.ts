@@ -17,6 +17,7 @@ import { CocktailList02Component } from './cocktail-list02/cocktail-list02.compo
 import { ButtonRacineComponent } from './button-racine/button-racine.component';
 import { TimerComponent } from './timer/timer.component';
 import { TodomasterComponent } from './todomaster/todomaster.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 const routes: Routes = [
   { path: "user", component: UserProfileComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: "button", component: ButtonRacineComponent },
   { path: "timer", component: TimerComponent },
   { path: "todo", component:  TodomasterComponent},
+  { path: "pokemon", component:  PokemonComponent},
 
 
 ];
